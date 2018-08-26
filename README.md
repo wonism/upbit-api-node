@@ -1,6 +1,11 @@
 # Upbit API Node
 > Api wrapper for Upbit
 
+## Install
+```
+$ npm i -S upbit-api-node
+```
+
 ## Quotation APIs
 ### subscribe(options) => ws
 Get websocket instance to subscribe websocket protocol
@@ -79,6 +84,8 @@ const upbitExchange = new Exchange(ACCESS_KEY, SECRET_KEY);
 | ------------------------ | -------- | ------------------------------------------------------------ |
 | accessKey                | String   | n\a                                                          |
 | secretKey                | String   | n\a                                                          |
+
+- You should go to [Open API Management page](https://upbit.com/mypage/open_api_management) to acquire these keys.
 
 ### upbitExchange.getMyAssets() => Promise
 Get user's asset information
