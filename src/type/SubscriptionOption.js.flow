@@ -1,0 +1,9 @@
+// @flow
+import type { SubscriptionList } from './SubscriptionList';
+
+export type SubscriptionOption = {
+  reconnect: ?Function,
+  openCallback: ?Function,
+  messageCallback: ?Function,
+  subscriptionList: SubscriptionList,
+};

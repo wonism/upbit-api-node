@@ -1,0 +1,7 @@
+// @flow
+export type Subscription = {
+  intervalId: ?IntervalID,
+  subscriptions: {
+    [string]: {},
+  }
+};

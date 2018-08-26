@@ -1,0 +1,13 @@
+// @flow
+export type Tick = {
+  market: string,
+  trade_date_utc: string,
+  trade_time_utc: string,
+  timestamp: number,
+  trade_price: number,
+  trade_volume: number,
+  prev_closing_price: number,
+  chane_price: number,
+  ask_bid: 'ASK' | 'BID',
+  sequential_id: number,
+};

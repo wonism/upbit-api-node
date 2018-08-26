@@ -1,0 +1,11 @@
+// @flow
+import type { OrderSide } from './OrderSide';
+
+export type Trade = {
+  market: string,
+  uuid: string,
+  price: string, // Number-like
+  volume: string, // Number-like
+  funds: string, // Number-like
+  side: OrderSide,
+};

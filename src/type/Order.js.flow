@@ -1,0 +1,25 @@
+// @flow
+import type { OrderSide } from './OrderSide';
+import type { OrderType } from './OrderType';
+import type { OrderStatus } from './OrderStatus';
+import type { Trade } from './Trade';
+
+export type Order = {
+  uuid: string,
+  side: OrderSide,
+  ord_type: OrderType,
+  price: string, // Number-like
+  avg_price: string, // Number-like
+  state: OrderStatus,
+  arket: string,
+  created_at: string,
+  volume: string, // Number-like
+  remaining_volume: string, // Number-like
+  reserved_fee: string, // Number-like
+  remaining_fee: string, // Number-like
+  paid_fee: string, // Number-like
+  locked: string, // Number-like
+  executed_volume: string, // Number-like
+  trades_count: number,
+  trades?: Array<Trade>,
+};

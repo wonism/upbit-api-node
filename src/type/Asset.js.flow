@@ -1,0 +1,8 @@
+// @flow
+export type Asset = {
+  currency: string,
+  balance: string,
+  locked: string,
+  avg_krw_buy_price: string,
+  modified: boolean,
+};

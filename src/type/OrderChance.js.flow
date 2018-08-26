@@ -1,0 +1,37 @@
+// @flow
+export type OrderChance = {
+  bid_fee: string, // Number-like
+  ask_fee: string, // Number-like
+  market: {
+    id: string,
+    name: string,
+    order_types: Array<string>,
+    order_sides: Array<string>,
+    bid: {
+      currency: string,
+      price_unit: string | null,
+      min_total: number,
+    },
+    ask: {
+      currency: string,
+      price_unit: string | null,
+      min_total: number,
+    },
+    max_total: string, // Number-like
+    state: string,
+  },
+  bid_account: {
+    currency: string,
+    balance: string, // Number-like
+    locked: string, // Number-like
+    avg_krw_buy_price: string, // Number-like
+    modified: boolean,
+  },
+  ask_account: {
+    currency: string,
+    balance: string, // Number-like
+    locked: string, // Number-like
+    avg_krw_buy_price: string, // Number-like
+    modified: boolean,
+  },
+};

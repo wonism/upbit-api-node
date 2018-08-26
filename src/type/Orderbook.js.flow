@@ -1,0 +1,17 @@
+// @flow
+export type Orderbook = {
+  market: string,
+  timestamp: number,
+  total_ask_size: number,
+  total_bid_size: number,
+  orderbook_units: Array<{
+    ask_price: number,
+    bid_price: number,
+    ask_size: number,
+    bid_size: number,
+  }>,
+  ask_price: number,
+  bid_price: number,
+  ask_size: number,
+  bid_size: number,
+};

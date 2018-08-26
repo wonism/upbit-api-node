@@ -1,0 +1,21 @@
+[ignore]
+.*/node_modules
+.*/flow-typed
+
+[include]
+.*/src
+
+[libs]
+<PROJECT_ROOT>/flow-typed
+
+[lints]
+all=warn
+untyped-type-import=error
+sketchy-null-bool=off
+
+[options]
+module.system=haste
+module.name_mapper='^~\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+module.name_mapper='^_\(.*\)$' -> '<PROJECT_ROOT>/\1'
+
+[strict]

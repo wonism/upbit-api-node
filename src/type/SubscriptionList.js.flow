@@ -1,0 +1,6 @@
+// @flow
+export type SubscriptionList = {
+  ticker: ?Array<string>,
+  orderbook: ?Array<string>,
+  trade: ?Array<string>,
+};

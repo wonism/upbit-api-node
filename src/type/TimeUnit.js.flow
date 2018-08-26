@@ -1,0 +1,2 @@
+// @flow
+export type TimeUnit = 'days' | 'weeks' | 'months';
