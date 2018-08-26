@@ -115,7 +115,6 @@ Get user's specific order
 
 **Kind**: async method of instance of Exchange
 
-   * @param {string} uuid - uuid for order
 | Param                    | Type     | Description                                                  |
 | ------------------------ | -------- | ------------------------------------------------------------ |
 | uuid                     | String   | uuid for order                                               |
