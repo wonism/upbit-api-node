@@ -1,9 +1,20 @@
 # Upbit API Node
-> Api wrapper for Upbit
+> API wrapper for Upbit
+
+[![npm version](https://badge.fury.io/js/upbit-api-node.svg)](https://badge.fury.io/js/upbit-api-node)
+[![Build Status](https://travis-ci.org/wonism/upbit-api-node.svg)](https://travis-ci.org/wonism/upbit-api-node)
 
 ## Install
 ```
 $ npm i -S upbit-api-node
+```
+
+## Disclaimer
+```
+I am not responsible for anything done with this.
+You use it at your own risk.
+There are no warranties or guarantees expressed or implied.
+You assume all responsibility and liability.
 ```
 
 ## Quotation APIs

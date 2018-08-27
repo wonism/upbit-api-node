@@ -38,7 +38,7 @@ module.exports = {
     indent: off,
     'lines-between-class-members': [error, 'always', { exceptAfterSingleLine: true }],
     'max-len': [error, 200, { ignoreComments: true }],
-    'no-console': error,
+    'no-console': off,
     'no-multiple-empty-lines': [error, { max: error, maxEOF: error }],
     'no-implicit-coercion': error,
     'no-undef': off,
