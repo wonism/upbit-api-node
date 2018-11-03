@@ -1,6 +1,6 @@
 import upbit from '../src';
 
-const { getTicker, getMinCandles, getCandles, getTick, getOrderbook, subscribe } = upbit;
+const { getTicker, getMinCandles, getCandles, getTick, getOrderbook, getMarketList, subscribe } = upbit;
 
 (async () => {
   console.log('---------- getTicker() ----------')
@@ -17,6 +17,9 @@ const { getTicker, getMinCandles, getCandles, getTick, getOrderbook, subscribe }
 
   console.log('---------- getOrderbook() ----------')
   console.log(await getOrderbook());
+
+  console.log('---------- getOrderbook() ----------')
+  console.log(await getMarketList());
 
   console.log('---------- subscribe() ----------')
   subscribe({

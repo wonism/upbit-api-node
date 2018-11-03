@@ -2,7 +2,7 @@
 import fetch from 'node-fetch';
 import WebSocket from 'ws';
 import { HOST, WSS_HOST, DEFAULT_MARKET, subscription } from '../constants';
-import type { SubscriptionOption, TimeUnit, Minute, Market, Candle, Tick, Orderbook } from '../type';
+import type { SubscriptionOption, TimeUnit, Minute, Market, Candle, Tick, Orderbook, MarketInfo } from '../type';
 import { handleWsOpen, handleWsError, handleWsClose, getEndpoint, serializeArray } from '../utils';
 
 /**
@@ -140,6 +140,22 @@ export const getOrderbook: Function = async (markets: Array<string> = [DEFAULT_M
   const endpoint: string = getEndpoint(HOST, pathname, qs);
   const result: Response = await fetch(endpoint);
   const data: Array<Orderbook> = await result.json();
+
+  return data;
+};
+
+/**
+ * Get list of markets available
+ * https://api.upbit.com/v1/market/all
+ *
+ * @async
+ * @return {Promise<Object>}
+ */
+export const getMarketList: Function = async (): Promise<Array<MarketInfo>> => {
+  const pathname: string = 'market/all';
+  const endpoint: string = getEndpoint(HOST, pathname, null);
+  const result: Response = await fetch(endpoint);
+  const data: Array<MarketInfo> = await result.json();
 
   return data;
 };
