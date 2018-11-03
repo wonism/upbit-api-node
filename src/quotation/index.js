@@ -153,7 +153,7 @@ export const getOrderbook: Function = async (markets: Array<string> = [DEFAULT_M
  */
 export const getMarketList: Function = async (): Promise<Array<MarketInfo>> => {
   const pathname: string = 'market/all';
-  const endpoint: string = getEndpoint(HOST, pathname, null);
+  const endpoint: string = getEndpoint(HOST, pathname, '');
   const result: Response = await fetch(endpoint);
   const data: Array<MarketInfo> = await result.json();
 
