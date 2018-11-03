@@ -18,7 +18,7 @@ const { getTicker, getMinCandles, getCandles, getTick, getOrderbook, getMarketLi
   console.log('---------- getOrderbook() ----------')
   console.log(await getOrderbook());
 
-  console.log('---------- getOrderbook() ----------')
+  console.log('---------- getMarketList() ----------')
   console.log(await getMarketList());
 
   console.log('---------- subscribe() ----------')
