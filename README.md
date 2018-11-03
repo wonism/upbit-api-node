@@ -82,6 +82,15 @@ Get Orderbook of given market
 | markets                  | String[] | Element should folow AAA-BBB                                 |
 | count                    | Number   | Numbers of candle count you want. 1 - 200                    |
 
+### getMarketList() => Promise
+Get Market List
+
+**Kind**: global async function
+
+| Param                    | Type     | Description                                                  |
+| ------------------------ | -------- | ------------------------------------------------------------ |
+| n/a                      | n/a      | n/a                                                          |
+
 ## Exchange APIs
 You need to create instance of Exchange class before using methods
 
