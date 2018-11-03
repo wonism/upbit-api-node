@@ -6,6 +6,7 @@ import {
   getCandles,
   getTick,
   getOrderbook,
+  getMarketList,
 } from './quotation';
 import Exchange from './exchange';
 
@@ -16,6 +17,7 @@ const upbit = {
   getCandles,
   getTick,
   getOrderbook,
+  getMarketList,
   Exchange,
 };
 
@@ -27,5 +29,6 @@ export {
   getCandles,
   getTick,
   getOrderbook,
+  getMarketList,
   Exchange,
 };

@@ -4,6 +4,7 @@ export type { SubscriptionList } from './SubscriptionList';
 export type { SubscriptionOption } from './SubscriptionOption';
 export type { TimeUnit } from './TimeUnit';
 export type { Minute } from './Minute';
+export type { MarketInfo } from './MarketInfo';
 export type { Market } from './Market';
 export type { Candle } from './Candle';
 export type { Tick } from './Tick';
