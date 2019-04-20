@@ -1,7 +1,18 @@
 # Changelog
 
+## 1.1.1 - 2019-04-20
+- 🔒 update packages to resolve vulnerabilities
+
+## 1.1.0 - 2018-11-03
+- ✨ add `MarketInfo` API
+
+## 1.0.1 - 2018-08-27
+- 📝 add disclaimer and badges
+- 💅 change .eslintrc.js to enable console
+- 🤖 add git hooks and travis
+
 ## 1.0.0 - 2018-08-26
-- Features
+- ✨ Release with these features
   - quotation APIs
     - connect websocket
     - get ticker(s)
