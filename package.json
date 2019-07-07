@@ -1,6 +1,6 @@
 {
   "name": "upbit-api-node",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Upbit API for Node.js",
   "keywords": [
     "upbit",
@@ -12,6 +12,7 @@
   "scripts": {
     "start": "babel-node demo",
     "build": "babel src --out-dir dist",
+    "prepare": "npm run build",
     "flow": "flow",
     "flow:check": "flow check ./src",
     "lint": "eslint src/**/*.js || true",
@@ -28,9 +29,10 @@
   "license": "MIT",
   "peerDependencies": {},
   "dependencies": {
-    "jsonwebtoken": "^8.3.0",
-    "node-fetch": "^2.2.0",
-    "ws": "^6.0.0"
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^2.6.0",
+    "uuid": "^3.3.2",
+    "ws": "^6.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",

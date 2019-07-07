@@ -1,6 +1,8 @@
 // @flow
 import fetch from 'node-fetch';
 import { sign } from 'jsonwebtoken';
+import uuidv4 from 'uuid/v4';
+
 import { HOST, GET, POST, DELETE, DEFAULT_MARKET, WAIT, ASC, LIMIT } from '../constants';
 import type { Payload, Asset, OrderChance, OrderStatus, OrderBy, OrderType, OrderSide, Order } from '../type';
 import { getEndpoint } from '../utils';
@@ -13,10 +15,10 @@ export default class Exchange {
 
   static getPayload = (accessKey: string, query?: string): Payload => {
     if (query) {
-      return { access_key: accessKey, nonce: Date.now(), query };
+      return { access_key: accessKey, nonce: uuidv4(), query };
     }
 
-    return { access_key: accessKey, nonce: Date.now() };
+    return { access_key: accessKey, nonce: uuidv4() };
   };
 
   constructor(accessKey: string, secretKey: string) {
@@ -55,7 +57,7 @@ export default class Exchange {
 
   /**
    * Get order chance
-   * https://api.upbit.com/v1/accounts
+   * https://api.upbit.com/v1/orders/chance
    *
    * @async
    * @param {string} market - AAA-BBB
