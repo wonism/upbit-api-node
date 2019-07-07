@@ -14,11 +14,13 @@ export default class Exchange {
   headers: { Authorization: string };
 
   static getPayload = (accessKey: string, query?: string): Payload => {
+  const nonce = uuidv4();
+
     if (query) {
-      return { access_key: accessKey, nonce: uuidv4(), query };
+      return { access_key: accessKey, nonce, query };
     }
 
-    return { access_key: accessKey, nonce: uuidv4() };
+    return { access_key: accessKey, nonce };
   };
 
   constructor(accessKey: string, secretKey: string) {

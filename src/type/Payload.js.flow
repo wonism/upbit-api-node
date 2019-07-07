@@ -1,5 +1,5 @@
 // @flow
 export type Payload = {
   access_key: string,
-  nonce: number
+  nonce: number | string
 };
