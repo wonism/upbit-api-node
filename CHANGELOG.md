@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.3 - 2019-07-07
+- 👷 fix lint & flow type
+
 ## 1.1.2 - 2019-07-07
 - 👷 update script to build files before publishing package
 - 🔒 update packages to resolve vulnerabilities
